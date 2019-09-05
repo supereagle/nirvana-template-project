@@ -10,12 +10,7 @@
     - [See also](#see-also)
   - [Getting started](#getting-started)
     - [Layout](#layout)
-    - [Building](#building)
-    - [Running](#running)
-  - [Versioning](#versioning)
-  - [Contributing](#contributing)
-  - [Authors](#authors)
-  - [License](#license)
+  - [Notes](#notes)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -96,34 +91,10 @@ Below we describe the conventions or tools specific to golang project.
 └── vendor                          #
 ```
 
-**Notes**
+## Notes
 
 * Makefile **MUST NOT** change well-defined command semantics, see Makefile for details.
 * Every project **MUST** use `dep` for vendor management and **MUST** checkin `vendor` direcotry.
 * `cmd` and `build` **MUST** have the same set of subdirectories for main targets
   * For example, `cmd/admin,cmd/controller` and `build/admin,build/controller`.
   * Dockerfile **MUST** be put under `build` directory even if you have only one Dockerfile.
-
-### Building
-
-<!-- Describe how to build this project -->
-
-### Running
-
-<!-- Describe how to run this project -->
-
-## Versioning
-
-<!-- Place versions of this project and write comments for every version -->
-
-## Contributing
-
-<!-- Tell others how to contribute this project -->
-
-## Authors
-
-<!-- Put authors here -->
-
-## License
-
-<!-- A link to license file -->
