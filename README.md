@@ -103,7 +103,6 @@ Below we describe the conventions or tools specific to golang project.
 * `cmd` and `build` **MUST** have the same set of subdirectories for main targets
   * For example, `cmd/admin,cmd/controller` and `build/admin,build/controller`.
   * Dockerfile **MUST** be put under `build` directory even if you have only one Dockerfile.
-* Upon checking out, you should install [pre-commit](https://pre-commit.com/) hook by running `pre-commit install -t pre-push`.
 
 ### Building
 
