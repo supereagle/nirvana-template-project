@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	v1 "github.com/caicloud/nirvana-template-project/pkg/descriptors/v1"
+	"github.com/caicloud/nirvana-template-project/pkg/descriptors"
 	"github.com/caicloud/nirvana-template-project/pkg/filters"
 	"github.com/caicloud/nirvana-template-project/pkg/modifiers"
 	"github.com/caicloud/nirvana-template-project/pkg/version"
@@ -48,7 +48,7 @@ func main() {
 		nirvana.Logger(log.DefaultLogger()), // Will be changed by logger plugin.
 		nirvana.Filter(filters.Filters()...),
 		nirvana.Modifier(modifiers.Modifiers()...),
-		nirvana.Descriptor(v1.Descriptor()),
+		nirvana.Descriptor(descriptors.Descriptor()),
 	)
 
 	// Set nirvana command hooks.
