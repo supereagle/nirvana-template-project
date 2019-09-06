@@ -63,6 +63,12 @@ Below we describe the conventions or tools specific to golang project.
 ├── cmd                             # Store startup commands for project
 │   └── demo-admin                  #
 │       └── main.go                 #
+├── docs                            # Store docs
+│   └── README.md                   #
+├── hack                            # Store scripts
+│   ├── README.md                   #
+│   ├── read_cpus_available.sh      # Script to read available cpus
+│   └── script.sh                   #
 ├── nirvana.yaml                    # File to describes your project
 ├── pkg                             # Store structures and converters required by API, distinguish by version
 │   ├── apis                        #
