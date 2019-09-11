@@ -1,9 +1,5 @@
-#
-# Copyright 2019 The Caicloud Authors.
-#
-
 FROM cargo.caicloud.xyz/library/debian:stretch
 
-ADD bin/demo-admin /admin
+ADD bin/demo-admin /usr/local/bin
 
-ENTRYPOINT ["/admin"]
+ENTRYPOINT ["demo-admin"]
