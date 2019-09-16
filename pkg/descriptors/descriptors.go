@@ -3,7 +3,7 @@
 package descriptors
 
 import (
-	"github.com/caicloud/nirvana-template-project/pkg/descriptors/v1"
+	v1 "github.com/caicloud/nirvana-template-project/pkg/descriptors/v1"
 	"github.com/caicloud/nirvana-template-project/pkg/middlewares"
 
 	def "github.com/caicloud/nirvana/definition"
